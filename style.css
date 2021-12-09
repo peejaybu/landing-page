@@ -4,11 +4,14 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Roboto, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .top {
   background-color: #1F2937;
-  padding: 16px 210px;
+  padding: 16px 240px;
 }
 
 .header{
@@ -48,12 +51,12 @@ a {
   align-items: flex-start;
   flex: 1;
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .img {
-  max-width: 1000px;
-  background-color: white;
-  opacity: 35%;
+  background-color: rgba(255, 255, 255, 0.350);
+  color: #F9FAF8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,9 +78,90 @@ a {
 
 button {
   font-family: Roboto, sans-serif;
-  color: white;
+  color: #F9FAF8;
   border: none;
   border-radius: 6px;
   background: #3882F6;
   padding: 6px 24px;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 100px 0;
+}
+
+.random-info {
+  color: #1F2937;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.info {
+  max-width: 150px;
+}
+
+.info img {
+  height: 150px;
+  width: 150px;
+  border: 4px solid #3882F6;
+  border-radius: 12px;
+}
+
+.quote {
+  background-color: #E5E7EB;
+  color: #1F2937;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: left;
+  padding: 100px 240px;
+}
+
+.quotee {
+  color: #1F2937;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+}
+
+.banner {
+  background-color: #3882F6;
+  color: #F9FAF8;
+  width: 900px;
+  height: auto;
+  border-radius: 8px;
+  padding: 48px 64px;
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.banner-title {
+  color: #F9FAF8;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.banner button {
+  border: 2px solid #F9FAF8;
+  flex-grow: 0;
+}
+
+footer {
+  background-color: #1F2937;
+  color: #E5E7EB;
+  padding: 36px;
 }
