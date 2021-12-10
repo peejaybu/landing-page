@@ -57,7 +57,7 @@ a {
   width: 920px;
 }
 
-.right {
+.left {
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -89,18 +89,24 @@ a {
 button {
   font-family: Roboto, sans-serif;
   color: #F9FAF8;
+  font-weight: 800;
+  font-size: 18px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   background: #3882F6;
-  padding: 6px 24px;
+  padding: 8px 36px;
 }
 
 .middle-info {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-flow: column wrap;
   align-items: center;
   margin: 50px 0 100px 0;
+}
+
+.middle-info .container {
+  justify-content: center;
+  gap: 64px;
 }
 
 .random-info {
@@ -114,11 +120,19 @@ button {
   max-width: 150px;
 }
 
+
 .info img {
   height: 150px;
   width: 150px;
+  margin-bottom: 8px;
+/* Uncomment if no image
   border: 4px solid #3882F6;
   border-radius: 12px;
+*/
+}
+
+.info-text {
+  color: #1F2937;
 }
 
 .middle-quote {
@@ -158,25 +172,31 @@ button {
 .banner {
   background-color: #3882F6;
   color: #F9FAF8;
-  width: 900px;
-  height: auto;
+  width: 920px;
   border-radius: 8px;
-  padding: 48px 64px;
   margin: 100px 0;
-  display: flex;
-  align-items: center;
   align-self: center;
+}
+
+.banner .container {
+  padding: 48px 128px;
+  width: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .banner-title {
   color: #F9FAF8;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .banner button {
   border: 2px solid #F9FAF8;
-  flex-grow: 0;
+  align-self: center;
 }
 
 .footer {
